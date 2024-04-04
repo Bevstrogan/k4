@@ -3,11 +3,13 @@ import json
 from abc import ABC, abstractmethod
 
 class AbstractAPI(ABC):
+    ''' Абстрактый класс для работы с API '''
     @abstractmethod
     def get_vacancies(self):
         pass
 
 class Get_vacancies(AbstractAPI):
+    ''' Класс для работы с API и получения вакансий '''
     def __init__(self, vacancy_name):
         self.vacancy_name: str = vacancy_name
         self.base_url = 'https://api.hh.ru/vacancies'

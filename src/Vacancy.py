@@ -1,5 +1,6 @@
 
 class Vacancy:
+    ''' Класс для работы с вакансиями'''
     def __init__(self, name, experience, salary_min, salary_max, url):
         self.name = name
         self.experience = experience
